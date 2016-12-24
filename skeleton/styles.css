@@ -1,0 +1,54 @@
+html, head, header, body, ul, li, div {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border-bottom: 3px solid black;
+}
+
+.bold {
+  font-weight: bolder;
+  color: gold;
+}
+
+.tabscontainer {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  background: yellow;
+  margin: 50px;
+  /*text-align: center;*/
+
+}
+
+li {
+  border: 2px solid black;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px;
+  padding-left: 33px;
+  padding-right: 33px;
+  background-color: blue;
+  color: lightblue;
+  font-family: sans-serif;
+}
+
+.tabsContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tabscontainer {
+}
+
+.tabsHeader {
+
+}
