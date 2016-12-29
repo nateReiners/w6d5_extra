@@ -1,7 +1,11 @@
 import Tabs from './tabs';
 import React from 'react';
 
-const tabs = [{title: 'one', content: 'I am the first'}, {title: 'two', content: 'Be creative Nate'}, {title: 'three', content: 'react is cool!' }];
+const tabs = [
+  {title: 'One', content: 'First is the worst.'},
+  {title: 'Two', content: 'Second is the best.'},
+  {title: 'Three', content: 'Third is the bird.' }
+];
 
 const Main = () => (
   <div className="main">

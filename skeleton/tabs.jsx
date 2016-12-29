@@ -12,7 +12,6 @@ class Tabs extends React.Component {
 
 
   render() {
-    // debugger;
     let tabs = this.props.tabList.map((tab, index) => (
       <li key={index}
         className = {(this.state.title === tab.title) ? "bold" : ""}
