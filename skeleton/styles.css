@@ -5,6 +5,9 @@ html, head, header, body, ul, li, div {
   font-family: inherit;
   background: transparent;
 }
+main {
+  display: flex;
+}
 
 ul {
   display: flex;
@@ -31,7 +34,7 @@ ul {
 
 li {
   box-sizing: border-box;
-  border: 3px solid #663300;
+  border: 1px solid #663300;
   border-radius: 5px 5px 0px 0px;
   padding: 5px;
   background-color: #B0E0E6;
@@ -46,28 +49,50 @@ li:hover {
   color: black;
 }
 
+.main {
+  margin: 50px;
+}
+
 .tabsContent {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("50d754f7d075e6382dfbe5452d13bb76.jpg");
+  background-image: url("images/landscape.jpg");
   background-position: center;
-  background-size: 355px;
+  background-size: 360px;
   color: #FFDEAD;
   text-shadow: 2px 2px black;
   font-family: sans-serif;
   font-size: 14px;
+  border-radius: 0px 0px 5px 5px;
 }
 
-.tabscontainer {
+.tabs-div, .clock-div {
+  display: inline-block;
 }
 
 .tabsHeader {
   display: flex;
-  background: black;
   border-radius: 5px 5px 0px 0px;
   border-bottom: 3px solid #663300;
   box-sizing: border-box;
+}
 
+@font-face {
+ font-family:'digital-clock';
+ src: url('fonts/digital-7.regular.ttf');
+}
+
+.clock-container {
+  border: 10px ridge darkgray;
+  border-radius: 5px;
+  width: 400px;
+  margin: 50px;
+  padding: 10px;
+  font-family: digital-clock;
+  color: red;
+  background: black;
+  font-size: 20px;
+  padding-left: 50px;
 }

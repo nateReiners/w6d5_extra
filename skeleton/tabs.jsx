@@ -7,15 +7,15 @@ class Tabs extends React.Component {
     this.state = {title: "", content: "", index: 0 };
   }
 
-  selectTab() {
-  }
-
-
   render() {
     let tabs = this.props.tabList.map((tab, index) => (
       <li key={index}
         className = {(this.state.title === tab.title) ? "bold" : ""}
-        onClick={() => (this.setState({ title: tab.title, content: tab.content, index }))}>
+        onClick={() => {
+          this.setState(
+            { title: tab.title, content: tab.content, index }
+          );
+        }}>
         {tab.title}
       </li>
     ));

@@ -1,5 +1,7 @@
-import Tabs from './tabs';
 import React from 'react';
+import Tabs from './tabs';
+import Clock from './clock';
+import Weather from './weather';
 
 const tabs = [
   {title: 'One', content: 'First is the worst.'},
@@ -13,7 +15,12 @@ const Main = () => (
       <Tabs tabList={tabs} />
     </div>
 
-    <div className="autocomplete-div">
+    <div className="clock-div">
+      <Clock />
+    </div>
+
+    <div className="weather-div">
+      <Weather />
     </div>
   </div>
 );
